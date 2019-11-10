@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AjaxPostingApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     <%= link_to "jQuery No.1", jquery_1_path %> |
+     <%= link_to "jQuery No.2", jquery_2_path %> |
+     <%= link_to "jQuery No.3", jquery_3_path %> |
+     <%= link_to "jQuery No.4", jquery_4_path %> |
+     <%= link_to "jQuery No.5", jquery_5_path %>
+
+    <%= yield %>
+  </body>
+</html>
